@@ -1,0 +1,171 @@
+
+/* fthe slide bar nav */
+.overlay { height: 4%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+   top: 0; 
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+    overflow-y: hidden;
+   transition: 0.5s;
+   }
+   
+   .overlay-content{
+   position: relative;
+   top: 25%;
+   width: 100%;
+   text-align: center;
+   margin-top: 30px;
+   }
+   
+   .overlay a { 
+   padding: 8px;
+   text-decoration: none;
+   font-size: 36px;
+   color: greenyellow;
+   display: block;
+   transition: 0.3s;
+   } 
+         
+         
+   .overlay a:hover, .overlay a:focus{ 
+   
+   color: blue;
+   }
+        
+   .overlay .closebtn{
+   position: absolute;
+   top: 20px;
+   right: 45px;
+   font-size: 80px;
+   
+   }
+   
+  
+    
+   .overlay a {
+   font-size: 20px
+   } 
+   
+   .overlay .closebtn {
+   font-size: 40px;
+   top: 15px;
+   right: 35px;
+   } 
+
+
+
+   .spanpic{
+    font-size: 45px;
+    color: white;
+    letter-spacing: 0.3em; 
+    padding: 10px;  
+}
+
+/*---------------------------- */
+
+
+
+
+
+
+body{
+size: 50%;
+height:  100%;
+background: url(Background.jpg);
+background-size: cover;
+
+}
+
+a{
+    text-decoration:  none;
+    color:rgb(228, 214, 187);
+    font-family:  'Montserrat', sans-serif;
+
+}
+
+nav ul li {
+    position: relative;
+    display:  inline-flex;
+    list-style: none;
+    letter-spacing: 0.1em;
+    justify-content:  space-between;
+    top:-30px;
+    left:550px;
+    padding: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    text-transform:  uppercase;
+    
+
+}
+    
+
+
+
+.pointernav{
+    position:  relative;
+    top: 20px;
+    left: 10px;
+}
+
+
+.arrows{
+    
+    display:  flex;
+    justify-content:  space-between;
+    position:  relative;
+    top: 250px;
+    
+}
+
+.text{
+
+    color:papayawhip;
+    text-transform:  capitalize;
+    position:  relative;
+    width: 800px;
+    height: 300px;
+    top:150px;
+    left: 360px;
+    font-size: 35px;
+    
+}
+
+.smartimg{
+    position: relative;
+    top:150px;
+    left: 600px;
+}
+
+/* the hover red line under the nav  */
+
+li::after{
+    content:'';
+    display: block;
+    height: 2.8px;
+    width: 0px;
+    right: 0px;
+    transition: all 0,1s;
+    top: 35px;
+    padding: 0;
+    margin: 0px;
+    position: relative;
+}
+
+li:hover ::after{
+    content:'';
+    display: block;
+    height: 2.8px;
+    width: 60px;
+    right: 0px;
+    left: 6px;
+    background: orangered;
+    top: 39px;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+
+}
